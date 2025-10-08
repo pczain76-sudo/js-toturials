@@ -38,4 +38,21 @@ console.log(newNum);
     let newBool = Boolean(isloggedin);
     console.log(typeof newBool);
     console.log(newBool);
+
 }
+//***************OPERATIONS**********************//
+console.log("2"+3); //23
+console.log(2+"3"); //23
+console.log("1"+"1"+3); //113
+console.log(1+1+"3"); //23
+console.log("1"+1+3); //113 
+console.log("1"+(1+2)); //13 its a best practice to use brackets
+
+//postfix and prefix increment and decrement
+let num1 = 15;
+++num1; //prefix increment
+
+console.log(num1); //16
+let num2 = 17;
+num2++; //postfix increment
+console.log(num2); //18
