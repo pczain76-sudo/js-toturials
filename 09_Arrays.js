@@ -40,3 +40,30 @@ console.log("new Array2 is",newArray2);
 //now we can also merge two arrays with concat method
 let mergedArray = newArray.concat(newArray2);
 console.log("merged Array is",mergedArray); //it will merge two arrays [1,2,3,4,5,6,7,11,12]
+///now i have to use spread operator to merge two arrays
+let hero = ['superman','batman','flash'];
+let villain = ['joker','lex luthor','cupid'];
+let sideartist = ['catwoman','harley quinn'];
+let all = [...hero, ...villain, ...sideartist];
+console.log("all characters:",all); //it will merge three arrays 
+//now use of flat method
+let arrflat = [1,2,[3,4],5,[6,7,[8,9]]];
+console.log(arrflat.flat(2)); 
+///is array
+let checkarray = "hello";
+console.log(Array.isArray(checkarray));
+let checkarray2 = [1,2,3];
+console.log(Array.isArray(checkarray2));
+//now use of from method
+let stringto = "hellioG10"
+console.log(Array.from(stringto));
+//it will convert string to array ['h','e','l','l','i','o','G','1','0']
+//now use (of) method
+let arrayof = (Array.of(1,2,3,4,5));
+console.log(typeof arrayof, arrayof); //object
+ //[1,2,3,4,5]
+ 
+
+
+
+
